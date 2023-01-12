@@ -12,6 +12,7 @@ const mascotas = require(__dirname + '/routes/mascotas');
 const restaurantes = require(__dirname + '/routes/restaurantes');
 const contactos = require(__dirname + '/routes/contactos');
 
+// Quitamos el warning de mongo
 mongoose.set('strictQuery', true);
 // Conexión con la BD
 mongoose.connect('mongodb://127.0.0.1:27017/contactos');
