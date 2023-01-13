@@ -15,7 +15,7 @@ const contactos = require(__dirname + '/routes/contactos');
 // Quitamos el warning de mongo
 mongoose.set('strictQuery', true);
 // Conexión con la BD
-mongoose.connect('mongodb://127.0.0.1:27017/contactos');
+mongoose.connect('mongodb://mongodb:27017/contactos');
 
 // Servidor Express
 let app = express();
